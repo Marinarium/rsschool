@@ -7,16 +7,17 @@
 body {
   padding: 0;
   margin: 0;
-  background: linear-gradient(to right, #00AAFF, #00FF6C);
+  background: linear-gradient(to left, #ffa54a, #ba85ff);
 }
 
 .calculator-grid {
   display: grid;
   justify-content: center;
-  align-content: center;
+  align-content: flex-start;
   min-height: 100vh;
   grid-template-columns: repeat(4, 100px);
-  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(6, 100px);
+    margin-bottom: 40px;
 }
 
 .calculator-grid > button {
@@ -55,4 +56,21 @@ body {
 .output .current-operand {
   color: white;
   font-size: 2.5rem;
+}
+
+.tutorial{
+    max-width: 440px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 40px auto;
+    color: #f4f4f4;
+    background-color: rgba(183, 133, 236, 0.30);
+}
+
+p {
+    line-height: 1.5;
+}
+
+b{
+    font-weight: bold;
 }
