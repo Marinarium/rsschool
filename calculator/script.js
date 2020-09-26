@@ -31,7 +31,7 @@ class Calculator {
 
     extractSquareRoot() {
         if (this.currentNumber < 0) {
-            alert("Не-а :Р Ты не можешь возвести " + this.currentNumber + " в квадрат. Это отрицательное число, сделай с ним, что-нибудь другое:)");
+            alert("Не-а :Р Ты не можешь возвести " + this.currentNumber + " в квадрат. Это отрицательное число сделай с ним, что-нибудь другое:)");
             return;
         }
         this.currentNumber = Math.sqrt(this.currentNumber);
@@ -61,19 +61,21 @@ class Calculator {
         if(isNaN(prev) || isNaN(current))  return; // если нажать равно без чисел - отмена
         switch (this.operation) {
             case '+' :
-                result = ((prev * multiplier) + (current * multiplier)) / multiplier;
+                //result = ((prev * multiplier) + (current * multiplier)) / multiplier;
+                result = parseFloat((prev + current).toFixed(12));
                 break;
             case '-' :
-                result = ((prev * multiplier) - (current * multiplier)) / multiplier;
+                //result = ((prev * multiplier) - (current * multiplier)) / multiplier;
+                result = parseFloat((prev - current).toFixed(12));
                 break;
             case '*' :
                 result = parseFloat((prev * current).toFixed(12));
                 break;
             case '÷' :
-                result = prev / current;
+                result = parseFloat((prev / current).toFixed(12));
                 break;
             case '^' :
-                result = Math.pow(prev, current);
+                result = parseFloat(Math.pow(prev, current).toFixed(12));
                 break;
             default:
                 return;
