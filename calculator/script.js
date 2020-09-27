@@ -31,7 +31,7 @@ class Calculator {
 
     extractSquareRoot() {
         if (this.currentNumber < 0) {
-            alert("Не-а :Р Ты не можешь возвести " + this.currentNumber + " в квадрат. Это отрицательное число сделай с ним, что-нибудь другое:)");
+            alert("Не-а :Р Ты не можешь извлечь квадратный корень из " + this.currentNumber + ". Это отрицательное число, сделай с ним что-нибудь другое:)");
             return;
         }
         this.currentNumber = Math.sqrt(this.currentNumber);
