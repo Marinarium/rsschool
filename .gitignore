@@ -105,3 +105,7 @@ dist
 
 #IDE
 .idea
+
+/node_modules
+
+.sass-cache
