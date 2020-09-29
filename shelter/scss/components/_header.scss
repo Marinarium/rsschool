@@ -1,0 +1,14 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 60px;
+  }
+}

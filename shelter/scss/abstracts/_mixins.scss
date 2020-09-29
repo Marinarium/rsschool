@@ -1,0 +1,43 @@
+/*---------Text------*/
+@mixin georgia-normal() {
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin arial-normal() {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin paragraph-1(){
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+/*------------Controls-------*/
+@mixin btn-link(){
+  @include georgia-normal();
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $color-btn-text;
+  padding: 15px 45px;
+  border-radius: 100px;
+  display: inline-block;
+}
+//@mixin main-title($size: 72px, $line: 111%) {
+//  font-family: $main-font;
+//  font-style: normal;
+//  font-weight: 900;
+//  font-size: $size;
+//  line-height: $line;
+//  color: $main-blue;
+//}
+
+

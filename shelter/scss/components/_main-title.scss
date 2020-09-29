@@ -1,0 +1,6 @@
+.main-title{
+  @include georgia-normal();
+  font-size: 44px;
+  line-height: 130%;
+  color: $color-light;
+}

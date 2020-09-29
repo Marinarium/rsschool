@@ -1,0 +1,30 @@
+.main-menu{
+  &__item{
+    display: inline-block;
+    margin-right: 32px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &__link{
+    text-decoration: none;
+    @include paragraph-1();
+    color: $text-on-dark-bg;
+    display: inline-block;
+    padding-bottom: 1px;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    transition-duration: 400ms;
+
+    &:hover {
+      transition-duration: 400ms;
+      color: $bg-light;
+    }
+
+    &_active{
+      border-bottom: 3px solid $color-primary;
+      color: $bg-light;
+    }
+  }
+}

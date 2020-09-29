@@ -1,0 +1,7 @@
+.section-title{
+  @include georgia-normal();
+  font-size: 35px;
+  line-height: 132%;
+  letter-spacing: 0.06em;
+  color: $color-title-dark;
+}

@@ -1,0 +1,23 @@
+@import "base/reset";
+@import "base/fonts";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/media";
+
+@import "components/header";
+@import "components/logo";
+@import "components/main-menu";
+@import "components/first-screen";
+@import "components/main-title";
+@import "components/desc";
+@import "components/link-button";
+@import "components/about";
+@import "components/section-title";
+@import "components/friends";
+@import "components/slider";
+@import "components/help";
+@import "components/donation";
+@import "components/footer";
+@import "components/contacts";
+
+@import "pages/home";
