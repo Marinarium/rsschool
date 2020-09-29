@@ -1,0 +1,6 @@
+.desc{
+  &__p{
+    @include paragraph-1();
+    color: $text-on-dark-bg;
+  }
+}
