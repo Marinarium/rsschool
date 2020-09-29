@@ -1,8 +1,9 @@
 # marinarium-JS2020Q3
 Private repository for @marinarium
-CV[1]
 
-##Projects
+[CV][1]
+
+## Projects
 - [webdev][2] 
 - [calculator][3]
 - [shelter][4]
