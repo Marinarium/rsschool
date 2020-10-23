@@ -2,6 +2,25 @@
   text-align: center;
   width: 186px;
   height: 60px;
+  text-decoration: none;
+  display: inline-block;
+
+  &.visually-hidden_logo {
+    @include respond-to(phones) {
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0, 0, 0, 0);
+      clip-path: inset(50%);
+      margin: -1px;
+      transition-duration: 300ms;
+    }
+  }
+
   &__title{
     @include georgia-normal;
     font-size: 32px;
@@ -16,5 +35,16 @@
     line-height: 1.2;
     letter-spacing: 0.1em;
     color: $color-light;
+  }
+}
+
+.logo_light {
+
+  .logo__title{
+    color: $color-title-dark;
+  }
+
+  .logo__subtitle {
+    color: $color-btn-text;
   }
 }

@@ -1,0 +1,40 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    @include georgia-normal();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    text-decoration: none;
+    color: $color-btn-text;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    margin-right: 20px;
+    cursor: pointer;
+
+    @include respond-to(phones) {
+      margin-right: 10px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &_disabled{
+      border-color: $text-on-dark-bg;
+      color: $text-on-dark-bg;
+    }
+
+    &_current {
+      background-color: $color-primary;
+    }
+  }
+}

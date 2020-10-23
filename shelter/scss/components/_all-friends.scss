@@ -1,0 +1,40 @@
+.all-friends {
+  background-color: $bg-grey;
+  padding-top: 120px;
+  padding-bottom: 98px;
+
+  @include respond-to(laptops) {
+    padding-bottom: 76px;
+  }
+
+  @include respond-to(phones) {
+    padding-bottom: 42px;
+  }
+
+  &__content{
+    max-width: 1200px;
+    margin: auto;
+
+    @include respond-to(laptops) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px 40px;
+    margin-bottom: 60px;
+
+    @include respond-to(laptops) {
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 40px;
+    }
+
+    @include respond-to(phones) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
