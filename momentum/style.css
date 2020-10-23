@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:focus {
+    outline: 1px dashed white;
+}
+
+.editable {
+    transition-duration: 500ms;
+    border-radius: 5px;
+}
+
+.editable:hover {
+    cursor: pointer;
+    background-color: rgba(64, 64, 64, 0.48);
+}
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #fafafa;
+    text-shadow: -1px 0 #404040, 0 1px #404040, 1px 0 #404040, 0 -1px #404040;
+    transition: background-image 1s ease-in-out 300ms;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: min(80%, 1000px);
+    background-color: rgba(26, 26, 26, 0.50);
+    /* background: linear-gradient(0deg, rgba(46,32,62,0.5158438375350141) 0%, rgba(255,143,74,0.5046393557422969) 100%); */
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 50px 20px 100px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.wrap:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(3px);
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.weather {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    min-height: 100px;
+}
+
+.weather__city {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    min-width: 100px;
+}
+
+.weather__temperature {
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.weather__description {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.weather__humidity {
+    margin-bottom: 5px;
+}
+
+.weather__error-message {
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+.date {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.time {
+    font-size: 70px;
+    font-weight: 700;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.time span {
+    min-width: 100px;
+}
+
+.greeting {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+.greeting__name {
+    min-width: 100px;
+    display: block;
+    margin-left: 10px;
+}
+
+.quote {
+    font-family: 'Bad Script', cursive;
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 80%;
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 143px;
+    transition: 1s ease-in-out 300ms;
+}
+
+.quote__btn {
+    background: none;
+    border: none;
+    margin-top: -5px;
+    cursor: pointer;
+    transition-duration: 450ms;
+    flex-basis: 30px;
+    margin-right: 10px;
+}
+
+.quote__btn:hover {
+    transform: rotate(-180deg);
+}
+
+.quote__btn:disabled {
+    opacity: 0.3;
+}
+
+
+.quote__img {
+    width: 30px;
+    height: 30px;
+}
+
+.quote__text {
+    line-height: 1.2;
+    flex-basis: 80%;
+    transition: background-image 1s ease-in-out 300ms;
+}
+
+.quote__author {
+    flex-basis: 100%;
+    padding-right: 5px;
+}
+
+.aim {
+    font-size: 14px;
+    line-height: 1.25;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.aim__question {
+    margin-bottom: 5px;
+}
+
+.aim__answer {
+    min-width: 100px;
+    max-width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 69px;
+    padding-top: 5px;
+}
+
+.button {
+    background-color: #595c5ba6;
+    padding: 9px 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Comfortaa', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+.button:hover {
+    background-color: rgba(89, 92, 91, 0.9);
+}
+
+.button[disabled] {
+    opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+    .quote {
+        font-size: 18px;
+        min-height: 147px;
+        width: 90%;
+    }
+
+    .greeting {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 570px) {
+    .wrap {
+        height: 90%;
+        width: 90%;
+    }
+
+    .quote {
+        font-size: 14px;
+        min-height: 164px;
+        width: 100%;
+    }
+
+    .weather__city {
+        font-size: 20px;
+    }
+
+    .date {
+        font-size: 20px;
+    }
+
+    .time {
+        font-size: 60px;
+    }
+
+    .time span {
+        min-width: 80px;
+    }
+
+    .greeting {
+        font-size: 20px;
+        min-height: 72px;
+    }
+
+    .aim {
+        font-size: 14px;
+    }
+
+    .aim__answer {
+        min-height: 72px;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="owfont-regular.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <title>momentum</title>
+</head>
+<body>
+<div class="wrap">
+  <div class="quote">
+    <button class="quote__btn" type="button"><img class="quote__img" src="assets/images/looping-arrows.png" alt="обновить"></button>
+    <p class="quote__text"></p>
+    <p class="quote__author"></p>
+  </div>
+  <div class="weather">
+    <div class="weather__city editable" contenteditable="true"></div>
+    <i class="weather-icon owf"></i>
+    <div class="weather__temperature"></div>
+    <div class="weather__description"></div>
+    <div class="weather__humidity"></div>
+    <div class="weather__wind"></div>
+    <div class="weather__error-message"></div>
+  </div>
+  <div class="date" id="date">
+  </div>
+  <div class="time">
+    <span class="time__hours" id="hours"></span>:
+    <span class="time__mins" id="mins"></span>:
+    <span class="time__secs" id="secs"></span>
+  </div>
+  <h1 class="greeting">
+    <span class="greeting__text" id="greeting"></span>
+    <span class="greeting__name editable" id="name" contenteditable="true"></span>
+  </h1>
+  <div class="aim">
+    <p class="aim__question">Какую цель ты выберешь на сегодня?</p>
+    <p class="aim__answer editable" id="focus" contenteditable="true"></p>
+  </div>
+  <button id="button" class="button" type="button">Следующая картинка</button>
+  <script src="script.js"></script>
+</div>
+</body>
+</html>
