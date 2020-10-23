@@ -31,7 +31,7 @@ body {
     background-position: center;
     color: #fafafa;
     text-shadow: -1px 0 #404040, 0 1px #404040, 1px 0 #404040, 0 -1px #404040;
-    transition: background-image 1s ease-in-out 300ms;
+    transition: background-image 1.5s ease-in-out 300ms;
 }
 
 .wrap {
