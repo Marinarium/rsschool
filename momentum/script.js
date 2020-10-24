@@ -129,7 +129,7 @@ function setBgGreet() {
                 document.body.style.backgroundImage = images[indexImg];
             }
 
-            setTimeout(function() { btn.disabled = false }, 1800);
+            setTimeout(function() { btn.disabled = false }, 2300);
         }
     });
 
