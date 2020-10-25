@@ -47,6 +47,12 @@
 .about__desc {
   max-width: 430px;
 
+  @include respond-to(phones){
+    margin-left: auto;
+    margin-right: auto;
+    max-width: none;
+  }
+
   .desc__p{
     margin-bottom: 25px;
     color: $text-on-light-bg;

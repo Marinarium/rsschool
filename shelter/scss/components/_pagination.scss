@@ -19,6 +19,11 @@
     letter-spacing: 0.06em;
     margin-right: 20px;
     cursor: pointer;
+    transition: 300ms;
+
+    &:hover {
+      background-color: #F1CDB3;
+    }
 
     @include respond-to(phones) {
       margin-right: 10px;
@@ -31,6 +36,10 @@
     &_disabled{
       border-color: $text-on-dark-bg;
       color: $text-on-dark-bg;
+      cursor: default;
+      &:hover {
+        background-color: transparent;
+      }
     }
 
     &_current {

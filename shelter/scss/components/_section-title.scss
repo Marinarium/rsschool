@@ -15,6 +15,10 @@
 .about .section-title{
   margin-bottom: 25px;
   max-width: 370px;
+  @include respond-to(phones) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .friends .section-title{

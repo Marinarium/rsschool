@@ -13,10 +13,18 @@
 
 .help__list {
   text-align: center;
+  @include respond-to(laptops) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 60px;
+    padding-left: 69px;
+    padding-right: 69px;
+  }
   @include respond-to(phones) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
+    padding: 0;
   }
 }
 
@@ -27,6 +35,8 @@
   @include respond-to(laptops) {
     width: 170px;
     margin: 0 28px 55px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @include respond-to(phones) {

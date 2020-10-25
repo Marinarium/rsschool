@@ -46,6 +46,7 @@
 
   @include respond-to(phones) {
     margin-bottom: 42px;
+    max-width: none;
   }
 }
 
@@ -86,6 +87,8 @@
     font-size: 15px;
     line-height: 155%;
     letter-spacing: 0.06em;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   &:hover{

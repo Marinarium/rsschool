@@ -37,12 +37,24 @@
     box-sizing: border-box;
     padding-top: 248px;
     opacity: 1;
-    transition-property: right, opacity;
+    transition-property: right, width, height, padding, opacity;
     transition-duration: 300ms;
 
     &.visually-hidden_menu {
-      opacity: 0;
       right: -320px;
+      //box-sizing: border-box;
+      //position: absolute;
+      //white-space: nowrap;
+      //width: 1px;
+      //height: 1px;
+      //overflow: hidden;
+      //border: 0;
+      //padding: 0;
+      //clip: rect(0, 0, 0, 0);
+      //clip-path: inset(50%);
+      //margin: -1px;
+      opacity: 0;
+      transition-property: right, width, height, padding, opacity;
       transition-duration: 300ms;
     }
   }
@@ -74,7 +86,7 @@
   }
 
   &_disabled {
-    cursor: auto;
+    cursor: default;
 
     &:hover {
       color: $text-on-dark-bg;
@@ -125,20 +137,22 @@
       color: $text-on-dark-bg;
       font-size: 32px;
       line-height: 160%;
-    }
-
-    &:hover {
-      transition-duration: 400ms;
-      color: $bg-light;
-    }
-
-    &_disabled {
-      cursor: auto;
 
       &:hover {
-        color: $text-on-dark-bg;
+        transition-duration: 400ms;
+        color: $bg-light;
+      }
+
+      &_disabled {
+        cursor: default;
+
+        &:hover {
+          color: $text-on-dark-bg;
+        }
       }
     }
+
+
   }
 }
 
@@ -150,4 +164,5 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 900;
+  overflow: scroll;
 }
