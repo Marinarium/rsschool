@@ -886,7 +886,8 @@ h1, h2, h3, h4, h5, h6 {
       line-height: 155%;
       letter-spacing: 0.06em;
       margin-right: auto;
-      margin-left: auto; } }
+      margin-left: auto;
+      max-width: 281px; } }
   .donation__link:hover {
     transition-duration: 400ms;
     transition-property: background-color;
