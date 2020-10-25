@@ -22,7 +22,8 @@
     transition: 300ms;
 
     &:hover {
-      background-color: #F1CDB3;
+      background-color: #FDDCC4;
+      border-color: #FDDCC4;
     }
 
     @include respond-to(phones) {
@@ -44,6 +45,12 @@
 
     &_current {
       background-color: $color-primary;
+      transition: 300ms;
+
+      &:hover {
+        background-color: #FDDCC4;
+        border-color: #FDDCC4;
+      }
     }
   }
 }

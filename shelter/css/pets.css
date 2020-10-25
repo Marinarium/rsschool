@@ -549,7 +549,8 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     transition: 300ms; }
     .pagination__link:hover {
-      background-color: #F1CDB3; }
+      background-color: #FDDCC4;
+      border-color: #FDDCC4; }
     @media only screen and (max-width: 767px) {
       .pagination__link {
         margin-right: 10px; } }
@@ -562,7 +563,11 @@ h1, h2, h3, h4, h5, h6 {
       .pagination__link_disabled:hover {
         background-color: transparent; }
     .pagination__link_current {
-      background-color: #F1CDB3; }
+      background-color: #F1CDB3;
+      transition: 300ms; }
+      .pagination__link_current:hover {
+        background-color: #FDDCC4;
+        border-color: #FDDCC4; }
 
 .footer {
   background: url("../assets/images/noise-lines.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
