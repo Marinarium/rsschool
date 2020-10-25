@@ -2,40 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shelter - Main</title>
     <link rel="icon" type="image/png" href="../../assets/icons/favicon.png">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../../css/main.css">
 </head>
-<body>
-<div class="wrapper home">
-    <header class="header">
+<body id="body">
+    <header class="header" id="header">
         <div class="header__content">
-            <div class="logo">
+            <a class="logo" id="main-logo">
                 <h1 class="logo__title">Cozy House</h1>
                 <p class="logo__subtitle">Shelter for pets in Boston</p>
-            </div>
+            </a>
             <nav class="main-menu">
-                <ul class="main-menu__list">
-                    <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link_active">About the
+                <div class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="main-menu__list visually-hidden_menu" id="mobile-menu">
+                    <li class="main-menu__item main-menu__item_logo">
+                        <a class="logo" href="../main/main.html">
+                            <p class="logo__title">Cozy House</p>
+                            <p class="logo__subtitle">Shelter for pets in Boston</p>
+                        </a>
+                    </li>
+                    <li class="main-menu__item"><a href="../main/main.html" class="main-menu__link main-menu__link_active">About the
                         shelter</a></li>
-                    <li class="main-menu__item"><a href="#" class="main-menu__link">Our pets</a></li>
-                    <li class="main-menu__item"><a href="#" class="main-menu__link">Help the shelter</a></li>
-                    <li class="main-menu__item"><a href="#" class="main-menu__link">Contacts</a></li>
+                    <li class="main-menu__item"><a href="../pets/pets.html" class="main-menu__link main-menu__link">Our pets</a></li>
+                    <li class="main-menu__item"><a class="main-menu__link main-menu__link_disabled">Help the shelter</a></li>
+                    <li class="main-menu__item"><a class="main-menu__link main-menu__link_disabled">Contacts</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main class="main">
+    <main class="main"  style="overflow: hidden">
         <section class="first-screen">
             <div class="first-screen__content">
                 <div class="first-screen__text">
-                    <h2 class="main-title">Not only people need a house</h2>
-                    <div class="desc">
+                    <h2 class="main-title first-screen__main-title">Not only people need a house</h2>
+                    <div class="desc first-screen__desc">
                         <p class="desc__p">We offer to give a chance to a little and nice puppy with an extremely wide
                             and open
                             heart. He or she will love you more than anybody else in the world, you will see!</p>
                     </div>
-                    <a href="#" class="button-link">Make a friend</a>
+                    <a href="../pets/pets.html" class="button-link first-screen__button-link">Make a friend</a>
                 </div>
                 <div class="first-screen__img"></div>
             </div>
@@ -44,8 +56,8 @@
             <div class="about__content">
                 <div class="about__img"></div>
                 <div class="about__text">
-                    <h2 class="section-title">About the shelter “Cozy House”</h2>
-                    <div class="desc">
+                    <h2 class="section-title about__section-title">About the shelter “Cozy House”</h2>
+                    <div class="desc about__desc">
                         <p class="desc__p">Currently we have 121 dogs and 342 cats on our hands and statistics show that
                             only 20% of them will find a family. The others will continue to live with us and will be
                             waiting for a lucky chance to become dearly loved.</p>
@@ -64,6 +76,41 @@
             <div class="friends__content">
                 <h2 class="section-title">Our friends who <br>are looking for a house</h2>
                 <div class="slider">
+                    <ul class="slider__list">
+                        <li class="card">
+                            <a href="#" class="card__link">
+                                <div class="card__frame">
+                                    <img src="../../assets/images/pets-katrine.png" alt="katrine" class="card__img">
+                                </div>
+                                <div class="card__text">
+                                    <h3 class="card__title">Katrine</h3>
+                                    <span href="#" class="button-link button-link_transparent">Learn more</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="#" class="card__link">
+                                <div class="card__frame">
+                                    <img src="../../assets/images/pets-jennifer.png" alt="katrine" class="card__img">
+                                </div>
+                                <div class="card__text">
+                                    <h3 class="card__title">Jennifer</h3>
+                                    <span href="#" class="button-link button-link_transparent">Learn more</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="#" class="card__link">
+                                <div class="card__frame">
+                                    <img src="../../assets/images/pets-woody.png" alt="katrine" class="card__img">
+                                </div>
+                                <div class="card__text">
+                                    <h3 class="card__title">Woody</h3>
+                                    <span href="#" class="button-link button-link_transparent">Learn more</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                     <div class="slider__nav">
                         <div class="slider__arrow slider__arrow_left">
                             <svg class="slider__arrow-img" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,43 +123,8 @@
                             </svg>
                         </div>
                     </div>
-                    <ul class="slider__list">
-                        <li class="slider__item">
-                            <a href="#" class="slider__link">
-                                <div class="slider__frame">
-                                    <img src="../../assets/images/pets-katrine.png" alt="katrine" class="slider__img">
-                                </div>
-                                <div class="slider__text">
-                                    <h3 class="slider__title">Katrine</h3>
-                                    <span href="#" class="button-link button-link_transparent">Learn more</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="slider__item">
-                            <a href="#" class="slider__link">
-                                <div class="slider__frame">
-                                    <img src="../../assets/images/pets-jennifer.png" alt="katrine" class="slider__img">
-                                </div>
-                                <div class="slider__text">
-                                    <h3 class="slider__title">Jennifer</h3>
-                                    <span href="#" class="button-link button-link_transparent">Learn more</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="slider__item">
-                            <a href="#" class="slider__link">
-                                <div class="slider__frame">
-                                    <img src="../../assets/images/pets-woody.png" alt="katrine" class="slider__img">
-                                </div>
-                                <div class="slider__text">
-                                    <h3 class="slider__title">Woody</h3>
-                                    <span href="#" class="button-link button-link_transparent">Learn more</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
-                <a href="#" class="button-link">Get to know the rest</a>
+                <a href="../pets/pets.html" class="button-link">Get to know the rest</a>
             </div>
         </section>
         <section class="help">
@@ -172,7 +184,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" style="overflow: hidden">
         <div class="footer__content">
             <div class="footer__text">
                 <section class="contacts">
@@ -189,6 +201,6 @@
             <div class="footer__img"></div>
         </div>
     </footer>
-</div>
+    <script src="../../js/show-menu.js"></script>
 </body>
 </html>

@@ -1,30 +1,57 @@
 .footer{
-  background: url("../../assets/images/noise-lines.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
-  padding-top: 40px;
-  &__content{
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+  background: url("../assets/images/noise-lines.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  padding-top: 38px;
+
+  @include respond-to(laptops) {
+    padding-top: 30px;
+  }
+}
+
+.footer__content{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  @include respond-to(laptops) {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 64px;
+    padding-right: 64px;
   }
 
-  .contacts{
-    max-width: 302px;
+  @include respond-to(phones) {
+    padding-left: 10px;
+    padding-right: 10px;
   }
+}
 
-  &__text{
-    display: flex;
-    justify-content: flex-start;
-    padding-bottom: 13px;
+.footer .contacts{
+  max-width: 302px;
+}
+
+.footer__text{
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 13px;
+
+  @include respond-to(phones) {
+    flex-direction: column;
+    align-items: center;
   }
+}
 
-  &__img {
-    width: 300px;
-    height: 315px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-image: url("../../assets/images/footer-puppy.png");
+.footer__img {
+  width: 300px;
+  height: 315px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../assets/images/footer-puppy.png");
+
+  @include respond-to(phones){
+    width: 260px;
+    height: 269px;
   }
 }

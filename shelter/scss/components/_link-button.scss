@@ -13,6 +13,9 @@
     background-color: transparent;
     border: 2px solid $color-primary;
     border-radius: 100px;
+    padding: 14px 45px;
+    max-width: 187px;
+    max-height: 52px;
     &:hover{
       border-color: $color-primary-hover;
     }

@@ -1,17 +1,20 @@
 .friends {
   background: $bg-grey;
   padding: 80px 0 100px;
-  &__content{
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .section-title{
-    text-align: center;
-    max-width: 400px;
-    margin-bottom: 56px;
+  @include respond-to(phones) {
+    padding: 42px 10px;
+  }
+}
+
+.friends__content{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include respond-to(laptops) {
+    max-width: 708px;
   }
 }
