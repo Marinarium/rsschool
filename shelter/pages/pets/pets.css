@@ -45,23 +45,24 @@ table {
 /* End of Eric Meyer's CSS Reset */
 @font-face {
   font-family: 'Arial';
-  src: url("../assets/fonts/Arial.woff2") format("woff2"), url("../fonts/Arial.woff") format("woff");
+  src: url("../../assets/fonts/Arial.woff2") format("woff2"), url("../../assets/fonts/Arial.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Georgia';
-  src: url("../assets/fonts/Georgia.woff2") format("woff2"), url("../assets/fonts/Georgia.woff") format("woff");
+  src: url("../../assets/fonts/Georgia.woff2") format("woff2"), url("../../assets/fonts/Georgia.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
-/*@font-face {
+@font-face {
   font-family: 'Arial';
-  src: url('../fonts/Arial-Italic.woff2') format('woff2'),
-  url('../fonts/Arial-Italic.woff') format('woff');
+  src: url('../../assets/fonts/Arial-Italic.woff2') format('woff2'),
+  url('../../assets/fonts/Arial-Italic.woff') format('woff');
   font-weight: normal;
-  font-style: normal;
-}*/
+  font-style: italic;
+}
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #fff;
@@ -743,7 +744,7 @@ h1, h2, h3, h4, h5, h6 {
         border-color: #FDDCC4; }
 
 .footer {
-  background: url("../assets/images/noise-lines.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  background: url("../../assets/images/noise-lines.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
   padding-top: 38px; }
   @media only screen and (max-width: 1279px) {
     .footer {
@@ -784,7 +785,7 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("../assets/images/footer-puppy.png"); }
+  background-image: url("../../assets/images/footer-puppy.png"); }
   @media only screen and (max-width: 767px) {
     .footer__img {
       width: 260px;
