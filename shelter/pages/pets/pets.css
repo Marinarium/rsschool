@@ -293,6 +293,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #545454; }
   .main-menu_light .main-menu__link:hover {
     color: #292929; }
+  .main-menu_light .main-menu__link_disabled:hover {
+    color: #545454; }
   .main-menu_light .main-menu__link_active {
     border-bottom: 3px solid #F1CDB3;
     color: #292929; }
@@ -735,7 +737,9 @@ h1, h2, h3, h4, h5, h6 {
       color: #CDCDCD;
       cursor: default; }
       .pagination__link_disabled:hover {
-        background-color: transparent; }
+        background-color: transparent;
+        border-color: #CDCDCD;
+      }
     .pagination__link_current {
       background-color: #F1CDB3;
       transition: 300ms; }
