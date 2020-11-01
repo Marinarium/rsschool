@@ -14,12 +14,13 @@ body {
     border-radius: 5px;
     color: #232946;
     background-color: #fffffe;
+    border: 1px solid #121629;
 }
 
 .text-field:focus {
     outline: none;
-    border: 2px solid #121629;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    /*border: 2px solid #121629;*/
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);*/
 }
 
 .keyboard {
