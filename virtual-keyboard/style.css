@@ -99,3 +99,22 @@ body {
     color: #eebbc3;
     border: 2px solid #eebbc3;
 }
+
+@media (max-width: 775px) {
+    .keyboard__key {
+        font-size: 14px;
+        height: 30px;
+        margin: 2px;
+        width: 5.5%;
+        max-width: 70px;
+    }
+
+    .keyboard__key--wide {
+        width: 10%;
+    }
+
+    .keyboard__key--extra-wide {
+        width: 30%;
+        max-width: 300px;
+    }
+}
