@@ -154,22 +154,26 @@ const Keyboard = {
                     keyElement.classList.add("keyboard__key--wide");
                     keyElement.innerHTML = createIconHTML("keyboard_arrow_left");
 
-                    let i = 0;
+                    /*let i = 0;
                     document.addEventListener("click", () => {
                         if (keyElement.contains(event.target)) {
                             i++;
                             this.elements.textField.focus();
-                            this.elements.textField.setSelectionRange(-1, (this.properties.value.length - i) );
+                            this.elements.textField.setSelectionRange(-1, (this.elements.textField.value.length - i) );
                             this._toggleSound("click-on");
                         } else {
                             i = 0;
                         }
-                    });
-                    /*keyElement.addEventListener("click", () => {
-                        this.elements.textField.focus();
-                        this.elements.textField.setSelectionRange(-1, (this.properties.value.length -1));
-                        this._toggleSound("click-on");
                     });*/
+                    keyElement.addEventListener("click", () => {
+                        //this.elements.textField.setSelectionRange(-1, (this.properties.value.length -1));
+                        let start = this.elements.textField.selectionStart;
+                        this.elements.textField.setSelectionRange(-1, (start -1));
+                        start = this.elements.textField.selectionStart;
+                        this.elements.textField.selectionEnd = start;
+                        this.elements.textField.focus();
+                        this._toggleSound("click-on");
+                    });
 
                     break;
 
@@ -177,7 +181,7 @@ const Keyboard = {
                     keyElement.classList.add("keyboard__key--wide");
                     keyElement.innerHTML = createIconHTML("keyboard_arrow_right");
 
-                    let j = 0;
+                   /* let j = 0;
                     document.addEventListener("click", () => {
                         if (keyElement.contains(event.target)) {
                             j++;
@@ -187,13 +191,15 @@ const Keyboard = {
                         } else {
                             j = 0;
                         }
-                    });
-
-                    /*keyElement.addEventListener("click", () => {
-                        this.elements.textField.focus();
-                        this.elements.textField.setSelectionRange(-1, (this.properties.value.length + 1));
-                        this._toggleSound("click-on");
                     });*/
+                    keyElement.addEventListener("click", () => {
+                        let start = this.elements.textField.selectionStart;
+                        this.elements.textField.setSelectionRange(-1, (start +1));
+                        start = this.elements.textField.selectionStart;
+                        this.elements.textField.selectionEnd = start;
+                        this.elements.textField.focus();
+                        this._toggleSound("click-on");
+                    });
 
                     break;
 
@@ -304,7 +310,6 @@ const Keyboard = {
 
     _toggleShift() {
         this.properties.shiftProp = !this.properties.shiftProp;
-        console.log("shift " + this.properties.shiftProp);
 
         if (this.properties.shiftProp && this.properties.lang) {
             this.elements.keys.forEach(function (item, i, array) {
@@ -335,7 +340,6 @@ const Keyboard = {
 
     _toggleLang() {
         this.properties.lang = !this.properties.lang;
-        console.log("en " + this.properties.lang);
 
         if (this.properties.shiftProp && this.properties.lang) {
             this.elements.keys.forEach(function (item, i, array) {
@@ -362,11 +366,9 @@ const Keyboard = {
                 }
             });
         }
-
     },
 
     _toggleSound(type) {
-
         let audio = document.querySelector(`audio[data-key="${type}"]`);
 
         if (this.properties.sound) {
