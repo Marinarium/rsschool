@@ -32,6 +32,11 @@ const keyLayouts = {
     ]
 };
 
+window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+const recognition = new SpeechRecognition();
+recognition.interimResults = true;
+recognition.continuous = true;
+recognition.lang = 'en-US';
 
 const Keyboard = {
     elements: {
@@ -51,7 +56,8 @@ const Keyboard = {
         capsLock: false,
         shiftProp: false,
         lang: true,
-        sound: false
+        sound: false,
+        speech: false
     },
 
     init() {
@@ -257,6 +263,9 @@ const Keyboard = {
 
                     keyElement.addEventListener("click", () => {
                         console.log("был нажат mic");
+
+                        this._toggleMic();
+                        this.properties.speech = !this.properties.speech;
                         keyElement.classList.toggle("keyboard__key--active");
                     });
 
@@ -376,6 +385,42 @@ const Keyboard = {
             if (!audio) return;
             audio.currentTime = 0;
             audio.play();
+        }
+
+    },
+
+    _toggleMic(){
+
+        this.properties.speech = !this.properties.speech;
+
+        if(this.properties.speech) {
+
+            console.log("speech " + this.properties.speech);
+
+            // recognition.start();
+            // this.elements.textField.innerHTML = "LISTENING...";
+
+            recognition.addEventListener("result", e => {
+
+                const transcript = Array.from(e.results)
+                    .map(result => result[0])
+                    .map(result => result.transcript)
+                    .join('');
+
+                let text = document.getElementById('text-field');
+                text.textContent = transcript;
+
+
+            });
+
+            recognition.addEventListener("end", recognition.start);
+
+            recognition.start();
+
+
+        } else {
+            recognition.addEventListener("end", recognition.stop);
+            recognition.stop();
         }
 
     },
