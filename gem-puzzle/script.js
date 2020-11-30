@@ -1,44 +1,48 @@
 'use strict'
-const frame = document.querySelector('.frame');
-const btnChange = document.querySelector('.btn-change');
-const tileSize = 100;
-const emptyTile = {
+const FRAME = document.querySelector('.frame');
+const BTN_CHANGE = document.querySelector('.btn-change');
+const TITLE_SIZE = 100;
+const PUZZLE_DIMENSION = 4;
+const PUZZLE_NUMBERS = 15;
+const EMPTY_TILE = {
     value: 0,
     top: 0,
     left: 0
 }
 const tiles = [];
-tiles.push(emptyTile);
+tiles.push(EMPTY_TILE);
 
-//заполняем массив в рандомном порядке
-let numbers = [...Array(15).keys()].map(x => x + 1).sort(() => Math.random() - 0.5);
+function createRandomNumbers() {
+    let numbers = [...Array(PUZZLE_NUMBERS).keys()].map(x => x + 1).sort(() => Math.random() - 0.5);
+    return numbers;
+}
 
 function moveTile(tilePosition) {
     const tile = tiles[tilePosition];
 
-    //проверяем можем ли передвигать ячейку
-    const differenceLeft = Math.abs(emptyTile.left - tile.left);
-    const differenceTop = Math.abs(emptyTile.top - tile.top);
+    //check opportunity to move a tile
+    const differenceLeft = Math.abs(EMPTY_TILE.left - tile.left);
+    const differenceTop = Math.abs(EMPTY_TILE.top - tile.top);
 
     if (differenceLeft + differenceTop > 1) {
         return;
     }
 
-    //задаем координаты ячейки, займет место пустой ячейки
-    tile.elem.style.left = `${emptyTile.left * tileSize}px`;
-    tile.elem.style.top = `${emptyTile.top * tileSize}px`;
+    //set coordinates for the empty tile to swap the empty tile and chosen tile
+    tile.elem.style.left = `${EMPTY_TILE.left * TITLE_SIZE}px`;
+    tile.elem.style.top = `${EMPTY_TILE.top * TITLE_SIZE}px`;
 
-    const tempLeft = emptyTile.left;
-    const tempTop = emptyTile.top;
+    const tempLeft = EMPTY_TILE.left;
+    const tempTop = EMPTY_TILE.top;
 
-    emptyTile.left = tile.left;
-    emptyTile.top = tile.top;
+    EMPTY_TILE.left = tile.left;
+    EMPTY_TILE.top = tile.top;
 
     tile.left = tempLeft;
     tile.top = tempTop;
 
     const isFinished = tiles.every(tile => {
-        return tile.value === tile.top * 4 + tile.left;
+        return tile.value === tile.top * PUZZLE_DIMENSION  + tile.left;
     });
 
     if (isFinished) {
@@ -46,15 +50,16 @@ function moveTile(tilePosition) {
     }
 }
 
-//Первоначальное постороение
-for (let i = 1; i < 16; i++) {
+//initial structure
+for (let i = 1; i <= PUZZLE_NUMBERS; i++) {
+    createRandomNumbers();
     const tile = document.createElement('div');
     let valueOfTile = numbers[i - 1];
     tile.className = 'tile';
     tile.innerHTML = valueOfTile;
 
-    const left = i % 4;
-    const top = (i - left) / 4;
+    const left = i % PUZZLE_DIMENSION ;
+    const top = (i - left) / PUZZLE_DIMENSION ;
 
     tiles.push({
         value: valueOfTile,
@@ -63,27 +68,30 @@ for (let i = 1; i < 16; i++) {
         elem: tile
     });
 
-    tile.style.left = `${left * tileSize}px`;
-    tile.style.top = `${top * tileSize}px`;
+    tile.style.left = `${left * TITLE_SIZE}px`;
+    tile.style.top = `${top * TITLE_SIZE}px`;
 
-    frame.append(tile);
+    FRAME.append(tile);
 
-    tile.addEventListener('click', () => {
+    FRAME.addEventListener('click', () => {
+        if(event.target !== tile) {
+            return;
+        }
         moveTile(i);
     });
 }
 
 function changePuzzle() {
-    let tileElems = document.querySelectorAll('.tile');
-    let numbers = [...Array(15).keys()].map(x => x + 1).sort(() => Math.random() - 0.5);
+    let tileElements = document.querySelectorAll('.tile');
+    createRandomNumbers();
 
-    function changeNumber(tileElem, numberElem) {
-        tileElem.innerHTML = numberElem;
+    function changeNumber(tileElement, number) {
+        tileElement.innerHTML = number;
     }
 
-    for (let i = 0; i < tileElems.length; i++) {
-        changeNumber(tileElems[i], numbers[i]);
+    for (let i = 0; i < tileElements.length; i++) {
+        changeNumber(tileElements[i], numbers[i]);
     }
 }
 
-btnChange.addEventListener('click', changePuzzle);
+BTN_CHANGE.addEventListener('click', changePuzzle);
