@@ -11,8 +11,7 @@ function rotateCard() {
         let showBackOfCard = function (arrow, card) {
 
             if(arrow.contains(event.target)){
-                card.classList.toggle('card_rotate')
-                console.log("arrow click");
+                card.classList.toggle('card_rotate');
             }
 
             if(card.classList.contains('card_rotate')){
