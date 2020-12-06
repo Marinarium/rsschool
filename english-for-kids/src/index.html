@@ -7,7 +7,8 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Pacifico&display=swap"
+          rel="stylesheet">
 </head>
 <body class="body">
 <div class="content">
@@ -41,7 +42,7 @@
     </header>
     <main class="main">
         <h1 class="main-title"><a href="#" class="main-title__link">English for Kids</a></h1>
-        <ul class="topics">
+        <ul class="topics visually-hidden">
             <li class="topics__item">
                 <a href="#animals" class="topics__link">
                 <span class="topics__frame">
@@ -139,26 +140,19 @@
                 </a>
             </li>
         </ul>
-        <ul class="cards cards_animals visually-hidden">
+        <ul class="cards cards_animals">
             <li class="card">
-            <div class="card__front">
-                <div class="card__frame">
-                    <img src="img/animals/cat.jpg" alt="animals" class="card__img">
-                </div>
-                <h3 class="card__title">cat</h3>
-            </div>
-            <div class="card__back visually-hidden">
-                <div class="card__frame">
-                    <img src="img/animals/cat.jpg" alt="animals" class="card__img">
-                </div>
-                <h3 class="card__title">кот</h3>
-            </div>
-            <div class="card__rotate">
-                <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     width="24px" height="24px" viewBox="0 0 80.429 80.428"
-                     style="enable-background:new 0 0 80.429 80.428;"
-                     xml:space="preserve">
+                <div class="card__front">
+                    <div class="card__frame">
+                        <img src="img/animals/cat.jpg" alt="animals" class="card__img">
+                    </div>
+                    <h3 class="card__title">cat</h3>
+                    <div class="card__rotate">
+                        <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             width="24px" height="24px" viewBox="0 0 80.429 80.428"
+                             style="enable-background:new 0 0 80.429 80.428;"
+                             xml:space="preserve">
                     <g>
                         <path fill="#818181" d="M37.242,2.971c14.689,0,27.651,8.476,33.688,21.325l4.201-8.719l5.298,2.552l-8.721,18.102L53.605,27.51l2.553-5.298
                             l9.43,4.542C60.494,15.964,49.594,8.853,37.242,8.853C19.95,8.853,5.88,22.921,5.88,40.214s14.07,31.362,31.362,31.362
@@ -166,22 +160,22 @@
                             S16.707,2.971,37.242,2.971z"/>
                     </g>
                     </svg>
-            </div>
-        </li>
+                    </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/animals/cat.jpg" alt="animals" class="card__img">
+                    </div>
+                    <h3 class="card__title">кот</h3>
+                </div>
+            </li>
             <li class="card">
                 <div class="card__front">
                     <div class="card__frame">
                         <img src="img/animals/dog.jpg" alt="animals" class="card__img">
                     </div>
                     <h3 class="card__title">dog</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/animals/dog.jpg" alt="animals" class="card__img">
-                    </div>
-                    <h3 class="card__title">пёс</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -195,6 +189,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/animals/dog.jpg" alt="animals" class="card__img">
+                    </div>
+                    <h3 class="card__title">пёс</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -202,14 +204,7 @@
                         <img src="img/animals/bear.jpg" alt="animals" class="card__img">
                     </div>
                     <h3 class="card__title">bear</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/animals/bear.jpg" alt="animals" class="card__img">
-                    </div>
-                    <h3 class="card__title">медведь</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -223,6 +218,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/animals/bear.jpg" alt="animals" class="card__img">
+                    </div>
+                    <h3 class="card__title">медведь</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -230,14 +233,7 @@
                         <img src="img/animals/lion.jpg" alt="animals" class="card__img">
                     </div>
                     <h3 class="card__title">lion</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/animals/lion.jpg" alt="animals" class="card__img">
-                    </div>
-                    <h3 class="card__title">лев</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -251,6 +247,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/animals/lion.jpg" alt="animals" class="card__img">
+                    </div>
+                    <h3 class="card__title">лев</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -258,14 +262,7 @@
                         <img src="img/animals/hedgehog.jpg" alt="animals" class="card__img">
                     </div>
                     <h3 class="card__title">hedgehog</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/animals/hedgehog.jpg" alt="animals" class="card__img">
-                    </div>
-                    <h3 class="card__title">ёжик</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -279,6 +276,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/animals/hedgehog.jpg" alt="animals" class="card__img">
+                    </div>
+                    <h3 class="card__title">ёжик</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -286,14 +291,7 @@
                         <img src="img/animals/koala.jpg" alt="animals" class="card__img">
                     </div>
                     <h3 class="card__title">koala</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/animals/koala.jpg" alt="animals" class="card__img">
-                    </div>
-                    <h3 class="card__title">коала</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -307,6 +305,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/animals/koala.jpg" alt="animals" class="card__img">
+                    </div>
+                    <h3 class="card__title">коала</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -314,14 +320,7 @@
                         <img src="img/animals/elephant.jpg" alt="animals" class="card__img">
                     </div>
                     <h3 class="card__title">elephant</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/animals/elephant.jpg" alt="animals" class="card__img">
-                    </div>
-                    <h3 class="card__title">слон</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -335,6 +334,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/animals/elephant.jpg" alt="animals" class="card__img">
+                    </div>
+                    <h3 class="card__title">слон</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -342,14 +349,7 @@
                         <img src="img/animals/fox.jpg" alt="animals" class="card__img">
                     </div>
                     <h3 class="card__title">fox</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/animals/cat.jpg" alt="animals" class="card__img">
-                    </div>
-                    <h3 class="card__title">лиса</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -363,6 +363,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/animals/fox.jpg" alt="animals" class="card__img">
+                    </div>
+                    <h3 class="card__title">лиса</h3>
+                </div>
+
             </li>
         </ul>
         <ul class="cards cards_birds visually-hidden">
@@ -372,14 +380,7 @@
                         <img src="img/birds/sparrow.jpg" alt="bird" class="card__img">
                     </div>
                     <h3 class="card__title">sparrow</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/birds/sparrow.jpg" alt="bird" class="card__img">
-                    </div>
-                    <h3 class="card__title">воробей</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -393,6 +394,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/birds/sparrow.jpg" alt="bird" class="card__img">
+                    </div>
+                    <h3 class="card__title">воробей</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -400,14 +409,7 @@
                         <img src="img/birds/bullfinch.jpg" alt="bird" class="card__img">
                     </div>
                     <h3 class="card__title">bullfinch</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/birds/bullfinch.jpg" alt="bird" class="card__img">
-                    </div>
-                    <h3 class="card__title">снегирь</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -421,6 +423,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/birds/bullfinch.jpg" alt="bird" class="card__img">
+                    </div>
+                    <h3 class="card__title">снегирь</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -428,14 +438,7 @@
                         <img src="img/birds/chicken.jpg" alt="bird" class="card__img">
                     </div>
                     <h3 class="card__title">chicken</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/birds/chicken.jpg" alt="bird" class="card__img">
-                    </div>
-                    <h3 class="card__title">цыплёнок</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -449,6 +452,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/birds/chicken.jpg" alt="bird" class="card__img">
+                    </div>
+                    <h3 class="card__title">цыплёнок</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -456,14 +467,7 @@
                         <img src="img/birds/crow.jpg" alt="bird" class="card__img">
                     </div>
                     <h3 class="card__title">crow</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/birds/crow.jpg" alt="bird" class="card__img">
-                    </div>
-                    <h3 class="card__title">ворона</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -477,6 +481,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/birds/crow.jpg" alt="bird" class="card__img">
+                    </div>
+                    <h3 class="card__title">ворона</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -484,14 +496,7 @@
                         <img src="img/birds/duck.jpg" alt="bird" class="card__img">
                     </div>
                     <h3 class="card__title">duck</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/birds/duck.jpg" alt="bird" class="card__img">
-                    </div>
-                    <h3 class="card__title">утка</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -505,6 +510,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/birds/duck.jpg" alt="bird" class="card__img">
+                    </div>
+                    <h3 class="card__title">утка</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -512,14 +525,7 @@
                         <img src="img/birds/owl.jpg" alt="bird" class="card__img">
                     </div>
                     <h3 class="card__title">owl</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/birds/owl.jpg" alt="bird" class="card__img">
-                    </div>
-                    <h3 class="card__title">сова</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -533,6 +539,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/birds/owl.jpg" alt="bird" class="card__img">
+                    </div>
+                    <h3 class="card__title">сова</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -540,14 +554,7 @@
                         <img src="img/birds/parrot.jpg" alt="bird" class="card__img">
                     </div>
                     <h3 class="card__title">parrot</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/birds/parrot.jpg" alt="bird" class="card__img">
-                    </div>
-                    <h3 class="card__title">попугай</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -561,6 +568,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/birds/parrot.jpg" alt="bird" class="card__img">
+                    </div>
+                    <h3 class="card__title">попугай</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -568,14 +583,7 @@
                         <img src="img/birds/pigeon.jpg" alt="bird" class="card__img">
                     </div>
                     <h3 class="card__title">pigeon</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/birds/pigeon.jpg" alt="bird" class="card__img">
-                    </div>
-                    <h3 class="card__title">голубь</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -589,6 +597,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/birds/pigeon.jpg" alt="bird" class="card__img">
+                    </div>
+                    <h3 class="card__title">голубь</h3>
+                </div>
+
             </li>
         </ul>
         <ul class="cards cards_fishes visually-hidden">
@@ -598,14 +614,7 @@
                         <img src="img/fishes/carp.jpg" alt="carp" class="card__img">
                     </div>
                     <h3 class="card__title">carp</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/fishes/carp.jpg" alt="carp" class="card__img">
-                    </div>
-                    <h3 class="card__title">карп</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -619,6 +628,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/fishes/carp.jpg" alt="carp" class="card__img">
+                    </div>
+                    <h3 class="card__title">карп</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -626,14 +643,7 @@
                         <img src="img/fishes/goldfish.jpg" alt="goldfish" class="card__img">
                     </div>
                     <h3 class="card__title">goldfish</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/fishes/goldfish.jpg" alt="goldfish" class="card__img">
-                    </div>
-                    <h3 class="card__title">золотая рыбка</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -647,6 +657,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/fishes/goldfish.jpg" alt="goldfish" class="card__img">
+                    </div>
+                    <h3 class="card__title">золотая рыбка</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -654,14 +672,7 @@
                         <img src="img/fishes/herring.jpg" alt="herring" class="card__img">
                     </div>
                     <h3 class="card__title">herring</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/fishes/herring.jpg" alt="herring" class="card__img">
-                    </div>
-                    <h3 class="card__title">селёдка</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -675,6 +686,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/fishes/herring.jpg" alt="herring" class="card__img">
+                    </div>
+                    <h3 class="card__title">селёдка</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -682,14 +701,7 @@
                         <img src="img/fishes/pike.jpg" alt="pike" class="card__img">
                     </div>
                     <h3 class="card__title">pike</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/fishes/pike.jpg" alt="pike" class="card__img">
-                    </div>
-                    <h3 class="card__title">щука</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -703,6 +715,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/fishes/pike.jpg" alt="pike" class="card__img">
+                    </div>
+                    <h3 class="card__title">щука</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -710,14 +730,7 @@
                         <img src="img/fishes/salmon.jpg" alt="salmon" class="card__img">
                     </div>
                     <h3 class="card__title">salmon</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/fishes/salmon.jpg" alt="salmon" class="card__img">
-                    </div>
-                    <h3 class="card__title">лосось</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -731,6 +744,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/fishes/salmon.jpg" alt="salmon" class="card__img">
+                    </div>
+                    <h3 class="card__title">лосось</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -738,14 +759,7 @@
                         <img src="img/fishes/shark.jpg" alt="shark" class="card__img">
                     </div>
                     <h3 class="card__title">shark</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/fishes/shark.jpg" alt="shark" class="card__img">
-                    </div>
-                    <h3 class="card__title">акула</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -759,6 +773,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/fishes/shark.jpg" alt="shark" class="card__img">
+                    </div>
+                    <h3 class="card__title">акула</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -766,14 +788,7 @@
                         <img src="img/fishes/sprat.jpg" alt="sprat" class="card__img">
                     </div>
                     <h3 class="card__title">sprat</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/fishes/sprat.jpg" alt="sprat" class="card__img">
-                    </div>
-                    <h3 class="card__title">килька</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -787,6 +802,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/fishes/sprat.jpg" alt="sprat" class="card__img">
+                    </div>
+                    <h3 class="card__title">килька</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -794,14 +817,7 @@
                         <img src="img/fishes/tuna.jpg" alt="tuna" class="card__img">
                     </div>
                     <h3 class="card__title">tuna</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/fishes/tuna.jpg" alt="tuna" class="card__img">
-                    </div>
-                    <h3 class="card__title">тунец</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -815,6 +831,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/fishes/tuna.jpg" alt="tuna" class="card__img">
+                    </div>
+                    <h3 class="card__title">тунец</h3>
+                </div>
+
             </li>
         </ul>
         <ul class="cards cards_plants visually-hidden">
@@ -824,14 +848,7 @@
                         <img src="img/plants/tree.jpg" alt="tree" class="card__img">
                     </div>
                     <h3 class="card__title">tree</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/plants/tree.jpg" alt="tree" class="card__img">
-                    </div>
-                    <h3 class="card__title">дерево</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -845,6 +862,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/plants/tree.jpg" alt="tree" class="card__img">
+                    </div>
+                    <h3 class="card__title">дерево</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -852,14 +877,7 @@
                         <img src="img/plants/cactus.jpg" alt="cactus" class="card__img">
                     </div>
                     <h3 class="card__title">cactus</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/plants/cactus.jpg" alt="cactus" class="card__img">
-                    </div>
-                    <h3 class="card__title">кактус</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -873,6 +891,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/plants/cactus.jpg" alt="cactus" class="card__img">
+                    </div>
+                    <h3 class="card__title">кактус</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -880,14 +906,7 @@
                         <img src="img/plants/flower.jpg" alt="flower" class="card__img">
                     </div>
                     <h3 class="card__title">flower</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/plants/flower.jpg" alt="flower" class="card__img">
-                    </div>
-                    <h3 class="card__title">цветок</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -901,6 +920,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/plants/flower.jpg" alt="flower" class="card__img">
+                    </div>
+                    <h3 class="card__title">цветок</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -908,14 +935,7 @@
                         <img src="img/plants/grass.jpg" alt="grass" class="card__img">
                     </div>
                     <h3 class="card__title">grass</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/plants/grass.jpg" alt="grass" class="card__img">
-                    </div>
-                    <h3 class="card__title">трава</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -929,6 +949,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/plants/grass.jpg" alt="grass" class="card__img">
+                    </div>
+                    <h3 class="card__title">трава</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -936,14 +964,7 @@
                         <img src="img/plants/leaves.jpg" alt="leaves" class="card__img">
                     </div>
                     <h3 class="card__title">leaves</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/plants/leaves.jpg" alt="leaves" class="card__img">
-                    </div>
-                    <h3 class="card__title">листья</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -957,6 +978,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/plants/leaves.jpg" alt="leaves" class="card__img">
+                    </div>
+                    <h3 class="card__title">листья</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -964,14 +993,7 @@
                         <img src="img/plants/palm.jpg" alt="palm" class="card__img">
                     </div>
                     <h3 class="card__title">palm</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/plants/palm.jpg" alt="palm" class="card__img">
-                    </div>
-                    <h3 class="card__title">пальма</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -985,6 +1007,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/plants/palm.jpg" alt="palm" class="card__img">
+                    </div>
+                    <h3 class="card__title">пальма</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -992,14 +1022,7 @@
                         <img src="img/plants/sunflower.jpg" alt="sunflower" class="card__img">
                     </div>
                     <h3 class="card__title">sunflower</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/plants/sunflower.jpg" alt="sunflower" class="card__img">
-                    </div>
-                    <h3 class="card__title">подсолнух</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1013,6 +1036,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/plants/sunflower.jpg" alt="sunflower" class="card__img">
+                    </div>
+                    <h3 class="card__title">подсолнух</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1020,14 +1051,7 @@
                         <img src="img/plants/clover.jpg" alt="clover" class="card__img">
                     </div>
                     <h3 class="card__title">clover</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/plants/clover.jpg" alt="clover" class="card__img">
-                    </div>
-                    <h3 class="card__title">клевер</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1041,6 +1065,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/plants/clover.jpg" alt="clover" class="card__img">
+                    </div>
+                    <h3 class="card__title">клевер</h3>
+                </div>
+
             </li>
         </ul>
         <ul class="cards cards_colors visually-hidden">
@@ -1050,14 +1082,7 @@
                         <img src="img/colors/black.jpg" alt="black" class="card__img">
                     </div>
                     <h3 class="card__title">black</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/colors/black.jpg" alt="black" class="card__img">
-                    </div>
-                    <h3 class="card__title">чёрный</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1071,6 +1096,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/colors/black.jpg" alt="black" class="card__img">
+                    </div>
+                    <h3 class="card__title">чёрный</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1078,14 +1111,7 @@
                         <img src="img/colors/blue.jpg" alt="blue" class="card__img">
                     </div>
                     <h3 class="card__title">blue</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/colors/blue.jpg" alt="blue" class="card__img">
-                    </div>
-                    <h3 class="card__title">синий</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1099,6 +1125,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/colors/blue.jpg" alt="blue" class="card__img">
+                    </div>
+                    <h3 class="card__title">синий</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1106,14 +1140,7 @@
                         <img src="img/colors/brown.jpg" alt="brown" class="card__img">
                     </div>
                     <h3 class="card__title">brown</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/colors/brown.jpg" alt="brown" class="card__img">
-                    </div>
-                    <h3 class="card__title">коричневый</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1127,6 +1154,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/colors/brown.jpg" alt="brown" class="card__img">
+                    </div>
+                    <h3 class="card__title">коричневый</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1134,14 +1169,7 @@
                         <img src="img/colors/green.jpg" alt="green" class="card__img">
                     </div>
                     <h3 class="card__title">green</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/colors/green.jpg" alt="green" class="card__img">
-                    </div>
-                    <h3 class="card__title">зелёный</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1155,6 +1183,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/colors/green.jpg" alt="green" class="card__img">
+                    </div>
+                    <h3 class="card__title">зелёный</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1162,14 +1198,7 @@
                         <img src="img/colors/red.jpg" alt="red" class="card__img">
                     </div>
                     <h3 class="card__title">red</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/colors/red.jpg" alt="red" class="card__img">
-                    </div>
-                    <h3 class="card__title">красный</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1183,6 +1212,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/colors/red.jpg" alt="red" class="card__img">
+                    </div>
+                    <h3 class="card__title">красный</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1190,14 +1227,7 @@
                         <img src="img/colors/violet.jpg" alt="violet" class="card__img">
                     </div>
                     <h3 class="card__title">violet</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/colors/violet.jpg" alt="violet" class="card__img">
-                    </div>
-                    <h3 class="card__title">сиреневый</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1211,6 +1241,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/colors/violet.jpg" alt="violet" class="card__img">
+                    </div>
+                    <h3 class="card__title">сиреневый</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1218,14 +1256,7 @@
                         <img src="img/colors/white.jpg" alt="white" class="card__img">
                     </div>
                     <h3 class="card__title">white</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/colors/white.jpg" alt="white" class="card__img">
-                    </div>
-                    <h3 class="card__title">белый</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1239,6 +1270,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/colors/white.jpg" alt="white" class="card__img">
+                    </div>
+                    <h3 class="card__title">белый</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1246,14 +1285,7 @@
                         <img src="img/colors/yellow.jpg" alt="yellow" class="card__img">
                     </div>
                     <h3 class="card__title">yellow</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/colors/yellow.jpg" alt="yellow" class="card__img">
-                    </div>
-                    <h3 class="card__title">жёлтый</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1267,6 +1299,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/colors/yellow.jpg" alt="yellow" class="card__img">
+                    </div>
+                    <h3 class="card__title">жёлтый</h3>
+                </div>
+
             </li>
         </ul>
         <ul class="cards cards_food visually-hidden">
@@ -1276,14 +1316,7 @@
                         <img src="img/food/bread.jpg" alt="bread" class="card__img">
                     </div>
                     <h3 class="card__title">bread</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/food/bread.jpg" alt="bread" class="card__img">
-                    </div>
-                    <h3 class="card__title">хлеб</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1297,6 +1330,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/food/bread.jpg" alt="bread" class="card__img">
+                    </div>
+                    <h3 class="card__title">хлеб</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1304,14 +1345,7 @@
                         <img src="img/food/cheese.jpg" alt="cheese" class="card__img">
                     </div>
                     <h3 class="card__title">cheese</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/food/cheese.jpg" alt="cheese" class="card__img">
-                    </div>
-                    <h3 class="card__title">сыр</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1325,6 +1359,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/food/cheese.jpg" alt="cheese" class="card__img">
+                    </div>
+                    <h3 class="card__title">сыр</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1332,14 +1374,7 @@
                         <img src="img/food/egg.jpg" alt="egg" class="card__img">
                     </div>
                     <h3 class="card__title">egg</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/food/egg.jpg" alt="egg" class="card__img">
-                    </div>
-                    <h3 class="card__title">яйцо</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1353,6 +1388,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/food/egg.jpg" alt="egg" class="card__img">
+                    </div>
+                    <h3 class="card__title">яйцо</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1360,14 +1403,7 @@
                         <img src="img/food/fruit.jpg" alt="fruit" class="card__img">
                     </div>
                     <h3 class="card__title">fruit</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/food/fruit.jpg" alt="fruit" class="card__img">
-                    </div>
-                    <h3 class="card__title">фрукты</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1381,6 +1417,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/food/fruit.jpg" alt="fruit" class="card__img">
+                    </div>
+                    <h3 class="card__title">фрукты</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1388,14 +1432,7 @@
                         <img src="img/food/ice-cream.jpg" alt="ice-cream" class="card__img">
                     </div>
                     <h3 class="card__title">ice cream</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/food/ice-cream.jpg" alt="ice-cream" class="card__img">
-                    </div>
-                    <h3 class="card__title">мороженое</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1409,6 +1446,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/food/ice-cream.jpg" alt="ice-cream" class="card__img">
+                    </div>
+                    <h3 class="card__title">мороженое</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1416,14 +1461,7 @@
                         <img src="img/food/milk.jpg" alt="milk" class="card__img">
                     </div>
                     <h3 class="card__title">milk</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/food/milk.jpg" alt="milk" class="card__img">
-                    </div>
-                    <h3 class="card__title">молоко</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1437,6 +1475,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/food/milk.jpg" alt="milk" class="card__img">
+                    </div>
+                    <h3 class="card__title">молоко</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1444,14 +1490,7 @@
                         <img src="img/food/pizza.jpg" alt="pizza" class="card__img">
                     </div>
                     <h3 class="card__title">white</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/food/pizza.jpg" alt="pizza" class="card__img">
-                    </div>
-                    <h3 class="card__title">пицца</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1465,6 +1504,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/food/pizza.jpg" alt="pizza" class="card__img">
+                    </div>
+                    <h3 class="card__title">пицца</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1472,14 +1519,7 @@
                         <img src="img/food/vegetables.jpg" alt="vegetables" class="card__img">
                     </div>
                     <h3 class="card__title">vegetables</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/food/vegetables.jpg" alt="vegetables" class="card__img">
-                    </div>
-                    <h3 class="card__title">овощи</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1493,6 +1533,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/food/vegetables.jpg" alt="vegetables" class="card__img">
+                    </div>
+                    <h3 class="card__title">овощи</h3>
+                </div>
+
             </li>
         </ul>
         <ul class="cards cards_people visually-hidden">
@@ -1502,14 +1550,7 @@
                         <img src="img/people/boy.jpg" alt="boy" class="card__img">
                     </div>
                     <h3 class="card__title">boy</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/people/boy.jpg" alt="boy" class="card__img">
-                    </div>
-                    <h3 class="card__title">мальчик</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1523,6 +1564,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/people/boy.jpg" alt="boy" class="card__img">
+                    </div>
+                    <h3 class="card__title">мальчик</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1530,14 +1579,7 @@
                         <img src="img/people/child.jpg" alt="child" class="card__img">
                     </div>
                     <h3 class="card__title">child</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/people/child.jpg" alt="child" class="card__img">
-                    </div>
-                    <h3 class="card__title">ребёнок</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1551,6 +1593,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/people/child.jpg" alt="child" class="card__img">
+                    </div>
+                    <h3 class="card__title">ребёнок</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1558,14 +1608,7 @@
                         <img src="img/people/father.jpg" alt="father" class="card__img">
                     </div>
                     <h3 class="card__title">father</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/people/father.jpg" alt="father" class="card__img">
-                    </div>
-                    <h3 class="card__title">отец</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1579,6 +1622,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/people/father.jpg" alt="father" class="card__img">
+                    </div>
+                    <h3 class="card__title">отец</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1586,14 +1637,7 @@
                         <img src="img/people/girl.jpg" alt="girl" class="card__img">
                     </div>
                     <h3 class="card__title">girl</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/people/girl.jpg" alt="girl" class="card__img">
-                    </div>
-                    <h3 class="card__title">девочка</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1607,6 +1651,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/people/girl.jpg" alt="girl" class="card__img">
+                    </div>
+                    <h3 class="card__title">девочка</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1614,14 +1666,7 @@
                         <img src="img/people/man.jpg" alt="man" class="card__img">
                     </div>
                     <h3 class="card__title">man</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/people/man.jpg" alt="man" class="card__img">
-                    </div>
-                    <h3 class="card__title">мужчина</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1635,6 +1680,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/people/man.jpg" alt="man" class="card__img">
+                    </div>
+                    <h3 class="card__title">мужчина</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1642,14 +1695,7 @@
                         <img src="img/people/mother.jpg" alt="mother" class="card__img">
                     </div>
                     <h3 class="card__title">mother</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/people/mother.jpg" alt="mother" class="card__img">
-                    </div>
-                    <h3 class="card__title">мама</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1663,6 +1709,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/people/mother.jpg" alt="mother" class="card__img">
+                    </div>
+                    <h3 class="card__title">мама</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1670,14 +1724,7 @@
                         <img src="img/people/teacher.jpg" alt="teacher" class="card__img">
                     </div>
                     <h3 class="card__title">teacher</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/people/teacher.jpg" alt="teacher" class="card__img">
-                    </div>
-                    <h3 class="card__title">учитель</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1691,6 +1738,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/people/teacher.jpg" alt="teacher" class="card__img">
+                    </div>
+                    <h3 class="card__title">учитель</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1698,14 +1753,7 @@
                         <img src="img/people/woman.jpg" alt="woman" class="card__img">
                     </div>
                     <h3 class="card__title">woman</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/people/woman.jpg" alt="woman" class="card__img">
-                    </div>
-                    <h3 class="card__title">женщина</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1719,6 +1767,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/people/woman.jpg" alt="woman" class="card__img">
+                    </div>
+                    <h3 class="card__title">женщина</h3>
+                </div>
+
             </li>
         </ul>
         <ul class="cards cards_places visually-hidden">
@@ -1728,14 +1784,7 @@
                         <img src="img/places/beach.jpg" alt="beach" class="card__img">
                     </div>
                     <h3 class="card__title">beach</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/places/beach.jpg" alt="beach" class="card__img">
-                    </div>
-                    <h3 class="card__title">пляж</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1749,6 +1798,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/places/beach.jpg" alt="beach" class="card__img">
+                    </div>
+                    <h3 class="card__title">пляж</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1756,14 +1813,7 @@
                         <img src="img/places/city.jpg" alt="city" class="card__img">
                     </div>
                     <h3 class="card__title">city</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/places/city.jpg" alt="city" class="card__img">
-                    </div>
-                    <h3 class="card__title">город</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1777,6 +1827,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/places/city.jpg" alt="city" class="card__img">
+                    </div>
+                    <h3 class="card__title">город</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1784,14 +1842,7 @@
                         <img src="img/places/desert.jpg" alt="desert" class="card__img">
                     </div>
                     <h3 class="card__title">desert</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/places/desert.jpg" alt="desert" class="card__img">
-                    </div>
-                    <h3 class="card__title">пустыня</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1805,6 +1856,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/places/desert.jpg" alt="desert" class="card__img">
+                    </div>
+                    <h3 class="card__title">пустыня</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1812,14 +1871,7 @@
                         <img src="img/places/forest.jpg" alt="forest" class="card__img">
                     </div>
                     <h3 class="card__title">forest</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/places/forest.jpg" alt="forest" class="card__img">
-                    </div>
-                    <h3 class="card__title">лес</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1833,6 +1885,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/places/forest.jpg" alt="forest" class="card__img">
+                    </div>
+                    <h3 class="card__title">лес</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1840,14 +1900,7 @@
                         <img src="img/places/home.jpg" alt="home" class="card__img">
                     </div>
                     <h3 class="card__title">home</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/places/home.jpg" alt="home" class="card__img">
-                    </div>
-                    <h3 class="card__title">дом</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1861,6 +1914,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/places/home.jpg" alt="home" class="card__img">
+                    </div>
+                    <h3 class="card__title">дом</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1868,14 +1929,7 @@
                         <img src="img/places/room.jpg" alt="room" class="card__img">
                     </div>
                     <h3 class="card__title">room</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/places/room.jpg" alt="room" class="card__img">
-                    </div>
-                    <h3 class="card__title">комната</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1889,6 +1943,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/places/room.jpg" alt="room" class="card__img">
+                    </div>
+                    <h3 class="card__title">комната</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1896,14 +1958,7 @@
                         <img src="img/places/village.jpg" alt="village" class="card__img">
                     </div>
                     <h3 class="card__title">village</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/places/village.jpg" alt="village" class="card__img">
-                    </div>
-                    <h3 class="card__title">деревня</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1917,6 +1972,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/places/village.jpg" alt="village" class="card__img">
+                    </div>
+                    <h3 class="card__title">деревня</h3>
+                </div>
+
             </li>
             <li class="card">
                 <div class="card__front">
@@ -1924,14 +1987,7 @@
                         <img src="img/places/zoo.jpg" alt="zoo" class="card__img">
                     </div>
                     <h3 class="card__title">zoo</h3>
-                </div>
-                <div class="card__back visually-hidden">
-                    <div class="card__frame">
-                        <img src="img/places/zoo.jpg" alt="zoo" class="card__img">
-                    </div>
-                    <h3 class="card__title">зоопарк</h3>
-                </div>
-                <div class="card__rotate">
+                    <div class="card__rotate">
                     <svg class="card__svg-rotate" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="24px" height="24px" viewBox="0 0 80.429 80.428"
@@ -1945,6 +2001,14 @@
                     </g>
                     </svg>
                 </div>
+                </div>
+                <div class="card__back">
+                    <div class="card__frame">
+                        <img src="img/places/zoo.jpg" alt="zoo" class="card__img">
+                    </div>
+                    <h3 class="card__title">зоопарк</h3>
+                </div>
+
             </li>
         </ul>
     </main>

@@ -14,10 +14,41 @@
   position: relative;
   transition-duration: 250ms;
   cursor: pointer;
+  transition-property: box-shadow, transform;
+  transition: 0.6s;
+  transform-style: preserve-3d;
 
   &:hover {
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
   }
+}
+
+.card_rotate {
+  transform: rotateY(180deg);
+}
+
+.card_rotate .card__back {
+  z-index: 3;
+  backface-visibility: visible;
+}
+
+.card_rotate .card__front {
+  display: none;
+}
+
+.card__front, .card__back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card__front {
+  z-index: 2;
+}
+
+.card__back {
+  transform: rotateY(180deg);
 }
 
 .card__frame {
@@ -31,6 +62,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
 }
 
 .card__title {
@@ -42,7 +74,7 @@
 
 .card__rotate {
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
   right: 20px;
   cursor: pointer;
   transition-duration: 300ms;
