@@ -1,0 +1,28 @@
+.controls__button-start {
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+.button-start {
+  display: none;
+  border: none;
+  background-color: #ffc75b;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-family: Montserrat,sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition-duration: 250ms;
+
+  &:hover {
+    background-color: #ffab48;
+  }
+}
+
+.button-start_play {
+  display: inline-block;
+}
