@@ -9,6 +9,7 @@ export function changeDeckOfCards() {
     const food = document.querySelector('.cards_food');
     const people = document.querySelector('.cards_people');
     const places = document.querySelector('.cards_places');
+    const menuLinks = document.querySelectorAll('.main-menu__link');
 
     addHashDependencies();
 
@@ -24,20 +25,40 @@ export function changeDeckOfCards() {
         });
     }
 
+    function showActiveMenuLink() {
+        menuLinks.forEach(function (item) {
+            if(item.getAttribute('href') === window.location.hash) {
+                item.classList.add('active');
+            } else if (item.classList.contains('active')){
+                item.classList.remove('active');
+            }
+        });
+    }
+
     function addHashDependencies(){
         if (location.hash === ""){
             addVissualyHidden(allCards);
             topics.classList.remove('visually-hidden');
+            menuLinks.forEach(function (item) {
+                console.log(item.getAttribute('href'));
+                if(window.location.hash === "" && item.getAttribute('href')==="#") {
+                    item.classList.add('active');
+                } else if (item.classList.contains('active')){
+                    item.classList.remove('active');
+                }
+            });
         }
         if (location.hash === "#animals") {
             addVissualyHidden(allCards);
             topics.classList.add('visually-hidden');
             animals.classList.remove('visually-hidden');
+            showActiveMenuLink();
         }
         if (location.hash === "#birds") {
             addVissualyHidden(allCards);
             topics.classList.add('visually-hidden');
             birds.classList.remove('visually-hidden');
+            showActiveMenuLink();
         }
         if (location.hash === "#fishes") {
             addVissualyHidden(allCards);
@@ -48,26 +69,31 @@ export function changeDeckOfCards() {
             addVissualyHidden(allCards);
             topics.classList.add('visually-hidden');
             plants.classList.remove('visually-hidden');
+            showActiveMenuLink();
         }
         if (location.hash === "#colors") {
             addVissualyHidden(allCards);
             topics.classList.add('visually-hidden');
             colors.classList.remove('visually-hidden');
+            showActiveMenuLink();
         }
         if (location.hash === "#food") {
             addVissualyHidden(allCards);
             topics.classList.add('visually-hidden');
             food.classList.remove('visually-hidden');
+            showActiveMenuLink();
         }
         if (location.hash === "#people") {
             addVissualyHidden(allCards);
             topics.classList.add('visually-hidden');
             people.classList.remove('visually-hidden');
+            showActiveMenuLink();
         }
         if (location.hash === "#places") {
             addVissualyHidden(allCards);
             topics.classList.add('visually-hidden');
             places.classList.remove('visually-hidden');
+            showActiveMenuLink();
         }
     }
 
