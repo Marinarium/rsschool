@@ -40,7 +40,6 @@ export function changeDeckOfCards() {
             addVissualyHidden(allCards);
             topics.classList.remove('visually-hidden');
             menuLinks.forEach(function (item) {
-                console.log(item.getAttribute('href'));
                 if(window.location.hash === "" && item.getAttribute('href')==="#") {
                     item.classList.add('active');
                 } else if (item.classList.contains('active')){
