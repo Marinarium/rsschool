@@ -14,13 +14,17 @@
   position: relative;
   transition-duration: 250ms;
   cursor: pointer;
-  transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, filter;
   transition: 0.6s;
   transform-style: preserve-3d;
 
   &:hover {
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
   }
+}
+
+.card_success {
+  opacity: 0;
 }
 
 .card_rotate {

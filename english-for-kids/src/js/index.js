@@ -7,6 +7,7 @@ import {playAudioForWord} from './playAudioForWord';
 import {changeDeckOfCards} from './changeDeckOfCards.js';
 import {changeMode} from './changeMode.js';
 import {changeButtonStart} from './changeButtonStart';
+import {createGame} from './createGame.js';
 
 showMenu();
 changeSwitch();
@@ -15,6 +16,7 @@ playAudioForWord();
 changeDeckOfCards();
 changeMode();
 changeButtonStart();
+createGame();
 
 
 
