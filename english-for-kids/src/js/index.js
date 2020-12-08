@@ -6,6 +6,7 @@ import {rotateCard} from './rotateCard';
 import {playAudioForWord} from './playAudioForWord';
 import {changeDeckOfCards} from './changeDeckOfCards.js';
 import {changeMode} from './changeMode.js';
+import {changeButtonStart} from './changeButtonStart';
 
 showMenu();
 changeSwitch();
@@ -13,6 +14,7 @@ rotateCard();
 playAudioForWord();
 changeDeckOfCards();
 changeMode();
+changeButtonStart();
 
 
 

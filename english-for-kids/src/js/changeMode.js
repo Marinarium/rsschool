@@ -8,7 +8,6 @@ export function changeMode() {
     switchControl.addEventListener("click", chooseMode);
 
     function chooseMode() {
-        console.log("click");
         setTimeout(function(){
             if (checkBox.checked) {
                 topicsStatus.forEach(function (item) {
@@ -19,6 +18,7 @@ export function changeMode() {
                     item.classList.add('card_play');
                 });
 
+                buttonStart.innerText = "Start game"
                 buttonStart.classList.add('button-start_play');
 
             } else {

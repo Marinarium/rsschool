@@ -1,6 +1,10 @@
-.controls__button-start {
+.controls__buttons {
   text-align: right;
   margin-bottom: 40px;
+
+  @media (max-width: 940px) {
+    text-align: center;
+  }
 }
 
 .button-start {
@@ -20,6 +24,11 @@
 
   &:hover {
     background-color: #ffab48;
+  }
+
+  &:focus {
+    border: none;
+    outline: none;
   }
 }
 
