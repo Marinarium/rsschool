@@ -8,7 +8,6 @@ function changeButtonStart() {
     buttonStart.addEventListener("click", changeTextOfButton);
 
     function changeTextOfButton() {
-        buttonStart.classList.add('active');
-        buttonStart.innerText = "Repeat"
+        buttonStart.innerText = "Repeat";
     }
 }
