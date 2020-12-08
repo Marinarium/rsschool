@@ -10,6 +10,7 @@ export function changeDeckOfCards() {
     const people = document.querySelector('.cards_people');
     const places = document.querySelector('.cards_places');
     const menuLinks = document.querySelectorAll('.main-menu__link');
+    const buttonStart = document.querySelector('.button-start');
 
     addHashDependencies();
 
@@ -46,12 +47,14 @@ export function changeDeckOfCards() {
                     item.classList.remove('active');
                 }
             });
+            buttonStart.style.display = "none";
         }
         if (location.hash === "#animals") {
             addVissualyHidden(allCards);
             topics.classList.add('visually-hidden');
             animals.classList.remove('visually-hidden');
             showActiveMenuLink();
+            buttonStart.style.display = "inline-block";
         }
         if (location.hash === "#birds") {
             addVissualyHidden(allCards);
@@ -64,36 +67,42 @@ export function changeDeckOfCards() {
             topics.classList.add('visually-hidden');
             fishes.classList.remove('visually-hidden');
             showActiveMenuLink();
+            buttonStart.style.display = "inline-block";
         }
         if (location.hash === "#plants") {
             addVissualyHidden(allCards);
             topics.classList.add('visually-hidden');
             plants.classList.remove('visually-hidden');
             showActiveMenuLink();
+            buttonStart.style.display = "inline-block";
         }
         if (location.hash === "#colors") {
             addVissualyHidden(allCards);
             topics.classList.add('visually-hidden');
             colors.classList.remove('visually-hidden');
             showActiveMenuLink();
+            buttonStart.style.display = "inline-block";
         }
         if (location.hash === "#food") {
             addVissualyHidden(allCards);
             topics.classList.add('visually-hidden');
             food.classList.remove('visually-hidden');
             showActiveMenuLink();
+            buttonStart.style.display = "inline-block";
         }
         if (location.hash === "#people") {
             addVissualyHidden(allCards);
             topics.classList.add('visually-hidden');
             people.classList.remove('visually-hidden');
             showActiveMenuLink();
+            buttonStart.style.display = "inline-block";
         }
         if (location.hash === "#places") {
             addVissualyHidden(allCards);
             topics.classList.add('visually-hidden');
             places.classList.remove('visually-hidden');
             showActiveMenuLink();
+            buttonStart.style.display = "inline-block";
         }
     }
 
