@@ -63,6 +63,7 @@ export function changeDeckOfCards() {
             addVissualyHidden(allCards);
             topics.classList.add('visually-hidden');
             fishes.classList.remove('visually-hidden');
+            showActiveMenuLink();
         }
         if (location.hash === "#plants") {
             addVissualyHidden(allCards);
