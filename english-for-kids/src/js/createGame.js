@@ -4,10 +4,16 @@ export function createGame() {
     const allCards = document.querySelectorAll('.card');
     const buttonStart = document.querySelector('.button-start');
     const checkBox = document.querySelector('.switch__checkbox');
+    const boxOfStars = document.querySelector('.stars');
+    const resultBox = document.querySelector('.result');
+    const resultTitle = document.querySelector('.result__title');
+    const resultFrame = document.querySelector('.result__frame');
     let cardsForGame = [];
     let wordsForGame = [];
     let shuffledWords =[];
     let pathToSounds = [];
+    let resultOfGame = [];
+    let wrongAnswers = [];
 
     buttonStart.addEventListener('click', playAudio);
 
@@ -22,6 +28,8 @@ export function createGame() {
                     wordsForGame = [];
                     shuffledWords =[];
                     pathToSounds = [];
+                    resultOfGame = [];
+                    wrongAnswers = [];
                     cardsForGame = box.children;
                     cardsForGame.forEach(function (card) {
                         wordsForGame.push(card.getAttribute('data-word'));
@@ -37,13 +45,19 @@ export function createGame() {
             wordsForGame = [];
             shuffledWords =[];
             pathToSounds = [];
+            resultOfGame = [];
+            wrongAnswers = [];
         }
     }
 
     function playAudio(status){
-        if(status === "change") {
+        if(status === 'change') {
             pathToSounds.pop();
             setTimeout(createPlayingOfAudio, 1500);
+            if(pathToSounds.length == 0) {
+                setTimeout(addResult, 2000);
+            }
+
         } else {
             createPlayingOfAudio();
         }
@@ -66,10 +80,12 @@ export function createGame() {
                     audioSound.play();
                     card.classList.add('card_success');
                     playAudio('change');
+                    createStar('correct');
                 } else if(!card.classList.contains('card_success')){
                     let pathToShortSuccessSound = `audio/mistake.mp3`;
                     let audioSound = new Audio(pathToShortSuccessSound);
                     audioSound.play();
+                    createStar('mistake');
                 }
             }
         };
@@ -82,6 +98,68 @@ export function createGame() {
     function shuffleWords(array) {
         return array.sort(() => Math.random() - 0.5);
     }
+
+    function createStar(answer) {
+        if (answer === 'correct') {
+            let star = document.createElement('img');
+            star.src = 'img/star.png';
+            boxOfStars.appendChild(star);
+            resultOfGame.push('correct');
+        }
+        if (answer === 'mistake') {
+            let star = document.createElement('img');
+            star.src = 'img/mistake.png';
+            boxOfStars.appendChild(star);
+            resultOfGame.push('mistake');
+
+        }
+    }
+
+    function addResult() {
+        wrongAnswers = resultOfGame.filter(function(answer) {
+            if (answer === "mistake") {
+                return answer;
+            }
+        });
+        if (wrongAnswers.length == 0){
+            boxOfStars.innerHTML = '';
+            let pathToShortSuccessSound = `audio/success.mp3`;
+            let audioSound = new Audio(pathToShortSuccessSound);
+            audioSound.play();
+            showResultMessage('success');
+            setTimeout(gotToMainPage, 8000);
+        } else {
+            let pathToShortSuccessSound = `audio/failure.mp3`;
+            let audioSound = new Audio(pathToShortSuccessSound);
+            audioSound.play();
+            boxOfStars.innerHTML = '';
+            showResultMessage('fail', wrongAnswers.length);
+            setTimeout(gotToMainPage, 8000);
+        }
+
+        function showResultMessage(result, score) {
+            resultBox.classList.remove("visually-hidden");
+            resultFrame.innerHTML = '';
+            if(result === 'success'){
+                resultTitle.innerText = "Hurray!";
+                let face = document.createElement('img');
+                face.src = 'img/success.png';
+                resultFrame.appendChild(face);
+            } else if(result === 'fail'){
+                resultTitle.innerText = `Oops! ${(score > 1) ? score + ' mistakes' : score + ' mistake'}`;
+                let face = document.createElement('img');
+                face.src = 'img/failure.png';
+                resultFrame.appendChild(face);
+            }
+
+        }
+
+        function gotToMainPage() {
+            resultBox.classList.add("visually-hidden");
+            window.location.hash = '#';
+        }
+    }
 }
+
 
 
