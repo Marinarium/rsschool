@@ -15,9 +15,13 @@ export function createGame() {
     window.addEventListener('hashchange', createRandomAudioList);
 
     function createRandomAudioList (){
-        if (checkBox.checked) {
+        if (checkBox.checked && !buttonStart.classList.contains('button-start__repeat')) {
             allCardsBoxes.forEach(function (box) {
                 if (!box.classList.contains('visually-hidden')) {
+                    cardsForGame = [];
+                    wordsForGame = [];
+                    shuffledWords =[];
+                    pathToSounds = [];
                     cardsForGame = box.children;
                     cardsForGame.forEach(function (card) {
                         wordsForGame.push(card.getAttribute('data-word'));

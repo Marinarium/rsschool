@@ -9,5 +9,6 @@ function changeButtonStart() {
 
     function changeTextOfButton() {
         buttonStart.innerText = "Repeat";
+        buttonStart.classList.add('button-start__repeat');
     }
 }

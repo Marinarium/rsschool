@@ -55,6 +55,7 @@ export function changeDeckOfCards() {
                 }
             });
             buttonStart.style.display = "none";
+            buttonStart.classList.remove('button-start__repeat');
             removeHiddenCards();
         }
         if (location.hash === "#animals") {
@@ -64,6 +65,7 @@ export function changeDeckOfCards() {
             showActiveMenuLink();
             buttonStart.removeAttribute("style");
             buttonStart.innerText = "Start game";
+            buttonStart.classList.remove('button-start__repeat');
             removeHiddenCards();
         }
         if (location.hash === "#birds") {
@@ -73,6 +75,7 @@ export function changeDeckOfCards() {
             showActiveMenuLink();
             buttonStart.removeAttribute("style");
             buttonStart.innerText = "Start game";
+            buttonStart.classList.remove('button-start__repeat');
             removeHiddenCards();
         }
         if (location.hash === "#fishes") {
@@ -82,6 +85,7 @@ export function changeDeckOfCards() {
             showActiveMenuLink();
             buttonStart.removeAttribute("style");
             buttonStart.innerText = "Start game";
+            buttonStart.classList.remove('button-start__repeat');
             removeHiddenCards();
         }
         if (location.hash === "#plants") {
@@ -91,6 +95,7 @@ export function changeDeckOfCards() {
             showActiveMenuLink();
             buttonStart.removeAttribute("style");
             buttonStart.innerText = "Start game";
+            buttonStart.classList.remove('button-start__repeat');
             removeHiddenCards();
         }
         if (location.hash === "#colors") {
@@ -99,6 +104,7 @@ export function changeDeckOfCards() {
             colors.classList.remove('visually-hidden');
             showActiveMenuLink();
             buttonStart.innerText = "Start game";
+            buttonStart.classList.remove('button-start__repeat');
             removeHiddenCards();
         }
         if (location.hash === "#food") {
@@ -108,6 +114,7 @@ export function changeDeckOfCards() {
             showActiveMenuLink();
             buttonStart.removeAttribute("style");
             buttonStart.innerText = "Start game";
+            buttonStart.classList.remove('button-start__repeat');
             removeHiddenCards();
         }
         if (location.hash === "#people") {
@@ -117,6 +124,7 @@ export function changeDeckOfCards() {
             showActiveMenuLink();
             buttonStart.removeAttribute("style");
             buttonStart.innerText = "Start game";
+            buttonStart.classList.remove('button-start__repeat');
             removeHiddenCards();
         }
         if (location.hash === "#places") {
@@ -126,6 +134,7 @@ export function changeDeckOfCards() {
             showActiveMenuLink();
             buttonStart.removeAttribute("style");
             buttonStart.innerText = "Start game";
+            buttonStart.classList.remove('button-start__repeat');
             removeHiddenCards();
         }
     }
