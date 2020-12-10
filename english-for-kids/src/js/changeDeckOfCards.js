@@ -12,6 +12,7 @@ export function changeDeckOfCards() {
     const places = document.querySelector('.cards_places');
     const menuLinks = document.querySelectorAll('.main-menu__link');
     const buttonStart = document.querySelector('.button-start');
+    const boxOfStars = document.querySelector('.stars');
 
     addHashDependencies();
 
@@ -57,6 +58,7 @@ export function changeDeckOfCards() {
             buttonStart.style.display = "none";
             buttonStart.classList.remove('button-start__repeat');
             removeHiddenCards();
+            boxOfStars.innerHTML = '';
         }
         if (location.hash === "#animals") {
             addVissualyHidden(allCards);
@@ -67,6 +69,7 @@ export function changeDeckOfCards() {
             buttonStart.innerText = "Start game";
             buttonStart.classList.remove('button-start__repeat');
             removeHiddenCards();
+            boxOfStars.innerHTML = '';
         }
         if (location.hash === "#birds") {
             addVissualyHidden(allCards);
@@ -77,6 +80,7 @@ export function changeDeckOfCards() {
             buttonStart.innerText = "Start game";
             buttonStart.classList.remove('button-start__repeat');
             removeHiddenCards();
+            boxOfStars.innerHTML = '';
         }
         if (location.hash === "#fishes") {
             addVissualyHidden(allCards);
@@ -87,6 +91,7 @@ export function changeDeckOfCards() {
             buttonStart.innerText = "Start game";
             buttonStart.classList.remove('button-start__repeat');
             removeHiddenCards();
+            boxOfStars.innerHTML = '';
         }
         if (location.hash === "#plants") {
             addVissualyHidden(allCards);
@@ -97,6 +102,7 @@ export function changeDeckOfCards() {
             buttonStart.innerText = "Start game";
             buttonStart.classList.remove('button-start__repeat');
             removeHiddenCards();
+            boxOfStars.innerHTML = '';
         }
         if (location.hash === "#colors") {
             addVissualyHidden(allCards);
@@ -106,6 +112,7 @@ export function changeDeckOfCards() {
             buttonStart.innerText = "Start game";
             buttonStart.classList.remove('button-start__repeat');
             removeHiddenCards();
+            boxOfStars.innerHTML = '';
         }
         if (location.hash === "#food") {
             addVissualyHidden(allCards);
@@ -116,6 +123,7 @@ export function changeDeckOfCards() {
             buttonStart.innerText = "Start game";
             buttonStart.classList.remove('button-start__repeat');
             removeHiddenCards();
+            boxOfStars.innerHTML = '';
         }
         if (location.hash === "#people") {
             addVissualyHidden(allCards);
@@ -126,6 +134,7 @@ export function changeDeckOfCards() {
             buttonStart.innerText = "Start game";
             buttonStart.classList.remove('button-start__repeat');
             removeHiddenCards();
+            boxOfStars.innerHTML = '';
         }
         if (location.hash === "#places") {
             addVissualyHidden(allCards);
@@ -136,6 +145,7 @@ export function changeDeckOfCards() {
             buttonStart.innerText = "Start game";
             buttonStart.classList.remove('button-start__repeat');
             removeHiddenCards();
+            boxOfStars.innerHTML = '';
         }
     }
 

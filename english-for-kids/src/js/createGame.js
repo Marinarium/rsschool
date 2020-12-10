@@ -74,14 +74,14 @@ export function createGame() {
             if(card.contains(event.target) && checkBox.checked && !card.classList.contains('card_success')) {
                 let nameOfSound = card.getAttribute('data-word');
                 let nameOfAudio = shuffledWords[pathToSounds.length-1];
-                if (nameOfSound === nameOfAudio ) {
+                if (nameOfSound === nameOfAudio && buttonStart.classList.contains('button-start__repeat')) {
                     let pathToShortSuccessSound = `audio/pew.mp3`;
                     let audioSound = new Audio(pathToShortSuccessSound);
                     audioSound.play();
                     card.classList.add('card_success');
                     playAudio('change');
                     createStar('correct');
-                } else if(!card.classList.contains('card_success')){
+                } else if(!card.classList.contains('card_success') && buttonStart.classList.contains('button-start__repeat')){
                     let pathToShortSuccessSound = `audio/mistake.mp3`;
                     let audioSound = new Audio(pathToShortSuccessSound);
                     audioSound.play();
