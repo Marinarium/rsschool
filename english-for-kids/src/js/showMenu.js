@@ -9,23 +9,21 @@ function showMenu() {
     const body = document.querySelector('.body');
     const menuItems = document.querySelectorAll('.main-menu__item');
 
+    function toogleMenu(){
+        mainMenu.classList.toggle('visually-hidden');
+        burger.classList.toggle('active');
+        overlay.classList.toggle('active');
+        body.classList.toggle('overflow-hidden');
+    }
+
     body.addEventListener('click', function (event) {
         let changeMenuVisibility = function (menuItem) {
             if (burger.contains(event.target)) {
-                mainMenu.classList.toggle('visually-hidden');
-                burger.classList.toggle('active');
-                overlay.classList.toggle('active');
-                body.classList.toggle('overflow-hidden');
+                toogleMenu();
             } else if (burger.classList.contains('active') && !(mainMenu.contains(event.target))) {
-                mainMenu.classList.toggle('visually-hidden');
-                burger.classList.toggle('active');
-                overlay.classList.toggle('active');
-                body.classList.toggle('overflow-hidden');
+                toogleMenu();
             } else if (menuItem.contains(event.target) && burger.classList.contains('active')){
-                mainMenu.classList.toggle('visually-hidden');
-                burger.classList.toggle('active');
-                overlay.classList.toggle('active');
-                body.classList.toggle('overflow-hidden');
+                toogleMenu();
             }
         };
 
