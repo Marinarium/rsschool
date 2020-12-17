@@ -44,6 +44,17 @@ export function changeDeckOfCards() {
         });
     }
 
+    function addUsualListOfDependencies() {
+        addVissualyHidden(allCards);
+        topics.classList.add('visually-hidden');
+        showActiveMenuLink();
+        buttonStart.removeAttribute("style");
+        buttonStart.innerText = "Start game";
+        buttonStart.classList.remove('button-start__repeat');
+        removeHiddenCards();
+        boxOfStars.innerHTML = '';
+    }
+
     function addHashDependencies(){
         if (location.hash === ""){
             addVissualyHidden(allCards);
@@ -61,91 +72,36 @@ export function changeDeckOfCards() {
             boxOfStars.innerHTML = '';
         }
         if (location.hash === "#animals") {
-            addVissualyHidden(allCards);
-            topics.classList.add('visually-hidden');
+            addUsualListOfDependencies();
             animals.classList.remove('visually-hidden');
-            showActiveMenuLink();
-            buttonStart.removeAttribute("style");
-            buttonStart.innerText = "Start game";
-            buttonStart.classList.remove('button-start__repeat');
-            removeHiddenCards();
-            boxOfStars.innerHTML = '';
         }
         if (location.hash === "#birds") {
-            addVissualyHidden(allCards);
-            topics.classList.add('visually-hidden');
+            addUsualListOfDependencies();
             birds.classList.remove('visually-hidden');
-            showActiveMenuLink();
-            buttonStart.removeAttribute("style");
-            buttonStart.innerText = "Start game";
-            buttonStart.classList.remove('button-start__repeat');
-            removeHiddenCards();
-            boxOfStars.innerHTML = '';
         }
         if (location.hash === "#fishes") {
-            addVissualyHidden(allCards);
-            topics.classList.add('visually-hidden');
+            addUsualListOfDependencies();
             fishes.classList.remove('visually-hidden');
-            showActiveMenuLink();
-            buttonStart.removeAttribute("style");
-            buttonStart.innerText = "Start game";
-            buttonStart.classList.remove('button-start__repeat');
-            removeHiddenCards();
-            boxOfStars.innerHTML = '';
         }
         if (location.hash === "#plants") {
-            addVissualyHidden(allCards);
-            topics.classList.add('visually-hidden');
+            addUsualListOfDependencies();
             plants.classList.remove('visually-hidden');
-            showActiveMenuLink();
-            buttonStart.removeAttribute("style");
-            buttonStart.innerText = "Start game";
-            buttonStart.classList.remove('button-start__repeat');
-            removeHiddenCards();
-            boxOfStars.innerHTML = '';
         }
         if (location.hash === "#colors") {
-            addVissualyHidden(allCards);
-            topics.classList.add('visually-hidden');
-            colors.classList.remove('visually-hidden');
-            showActiveMenuLink();
-            buttonStart.innerText = "Start game";
-            buttonStart.classList.remove('button-start__repeat');
-            removeHiddenCards();
-            boxOfStars.innerHTML = '';
+            addUsualListOfDependencies();
+            colors.classList.remove('visually-hidden');;
         }
         if (location.hash === "#food") {
-            addVissualyHidden(allCards);
-            topics.classList.add('visually-hidden');
+            addUsualListOfDependencies();
             food.classList.remove('visually-hidden');
-            showActiveMenuLink();
-            buttonStart.removeAttribute("style");
-            buttonStart.innerText = "Start game";
-            buttonStart.classList.remove('button-start__repeat');
-            removeHiddenCards();
-            boxOfStars.innerHTML = '';
         }
         if (location.hash === "#people") {
-            addVissualyHidden(allCards);
-            topics.classList.add('visually-hidden');
+            addUsualListOfDependencies();
             people.classList.remove('visually-hidden');
-            showActiveMenuLink();
-            buttonStart.removeAttribute("style");
-            buttonStart.innerText = "Start game";
-            buttonStart.classList.remove('button-start__repeat');
-            removeHiddenCards();
-            boxOfStars.innerHTML = '';
         }
         if (location.hash === "#places") {
-            addVissualyHidden(allCards);
-            topics.classList.add('visually-hidden');
+            addUsualListOfDependencies();
             places.classList.remove('visually-hidden');
-            showActiveMenuLink();
-            buttonStart.removeAttribute("style");
-            buttonStart.innerText = "Start game";
-            buttonStart.classList.remove('button-start__repeat');
-            removeHiddenCards();
-            boxOfStars.innerHTML = '';
         }
     }
 

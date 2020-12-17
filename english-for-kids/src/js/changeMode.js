@@ -4,6 +4,7 @@ export function changeMode() {
     const topicsStatus = document.querySelectorAll('.topics__status');
     const allCards = document.querySelectorAll('.cards');
     const buttonStart = document.querySelector('.button-start');
+    const timeBeforeModeChanging = 200;
 
     switchControl.addEventListener("click", chooseMode);
 
@@ -32,6 +33,6 @@ export function changeMode() {
 
                 buttonStart.classList.remove('button-start_play');
             }
-        },200);
+        },timeBeforeModeChanging);
     }
 }
